@@ -11,6 +11,9 @@ const app = express();
 app.engine("handlebars", engine({ defaultLayout: "main" })); //
 app.set("view engine", "handlebars");
 
+//css
+app.use(express.static("public"));
+
 //mongoDB
 const mongoose = require("mongoose");
 mongoose
