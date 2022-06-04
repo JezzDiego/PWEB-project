@@ -33,7 +33,11 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => console.log("Connected to MongoDB"));
 //
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("register");
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
 });
 
 const PORT = 2022 || process.env.PORT;
