@@ -158,6 +158,9 @@ footer {
   #search input {
     margin-bottom: 7rem;
   }
+  footer {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 1005px) and (min-width: 755px) {
