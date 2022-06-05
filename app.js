@@ -17,6 +17,9 @@ app.use(express.static("public"));
 //images
 app.use(express.static("images"));
 
+//scripts
+app.use(express.static("scripts"));
+
 //mongoDB
 const mongoose = require("mongoose");
 mongoose
@@ -45,6 +48,10 @@ app.get("/login", (req, res) => {
 
 app.get("/home", (req, res) => {
   res.render("home");
+});
+
+app.get("/carrinho", (req, res) => {
+  res.render("cart");
 });
 
 const PORT = 2022 || process.env.PORT;
