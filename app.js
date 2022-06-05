@@ -14,6 +14,9 @@ app.set("view engine", "handlebars");
 //css
 app.use(express.static("public"));
 
+//images
+app.use(express.static("images"));
+
 //mongoDB
 const mongoose = require("mongoose");
 mongoose
@@ -38,6 +41,10 @@ app.get("/", (req, res) => {
 
 app.get("/login", (req, res) => {
   res.render("login");
+});
+
+app.get("/home", (req, res) => {
+  res.render("home");
 });
 
 const PORT = 2022 || process.env.PORT;
