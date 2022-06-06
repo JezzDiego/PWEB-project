@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  background-color: beige;
 }
 #container {
   display: flex;
@@ -94,11 +95,10 @@ body {
 }
 .planta {
   text-align: center;
-  border: 1px solid gray;
   min-width: 230px;
   height: 16rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 .planta:hover {
@@ -143,10 +143,11 @@ footer {
 
 @media (min-width: 426px) {
   #plantas {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
   }
   .planta {
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
   }
   #nav-buttons {
     justify-content: flex-start;
