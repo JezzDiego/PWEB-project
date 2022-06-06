@@ -82,7 +82,6 @@ form {
     rgba(181, 223, 212, 1) 0%,
     rgba(39, 196, 55, 1) 100%
   );
-  margin-top: 20px;
 }
 
 @media (min-width: 426px) {
