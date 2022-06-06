@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  background-color: beige;
 }
 #container {
   display: flex;
@@ -12,8 +13,9 @@ body {
   margin: 1rem;
 }
 #father-header {
-  background-image: url(../images/media-background-image.jpg);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/media-background-image.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 #title h1 {
   font-size: 2.5rem;
@@ -94,18 +96,27 @@ body {
   margin-top: 1rem;
 }
 .planta {
-  border: 1px solid gray;
   width: fit-content;
   min-width: 230px;
   height: fit-content;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
-  padding-left: 1.5rem;
 }
-.planta-img img {
-  width: 6rem;
+.planta-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.planta-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .price {
   display: flex;
@@ -114,6 +125,8 @@ body {
 .remove-item {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .remove-item button {
   height: 1rem;
@@ -124,8 +137,7 @@ body {
 .remove-item-buttons {
   width: max-content;
   height: min-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto 0 auto 0;
   display: flex;
   flex-direction: row;
   align-items: center;
