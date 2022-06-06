@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-image: url(../images/background-image.png);
+}
+
+.container div h1 {
+  color: white;
+  margin-top: 40%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+form {
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  left: 6%;
+  right: 6%;
+  top: 27.45%;
+  bottom: 66.07%;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+#register-button,
+#login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  left: 6.31%;
+  right: 5.84%;
+  top: 75.59%;
+  bottom: 19.01%;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  height: 50px;
+}
+
+#register-button {
+  background: rgb(181, 223, 212);
+  background: linear-gradient(
+    270deg,
+    rgba(181, 223, 212, 1) 0%,
+    rgba(39, 196, 55, 1) 100%
+  );
+  margin-top: 20%;
+}
+
+#login-button {
+  background: rgb(181, 223, 212);
+  background: linear-gradient(
+    270deg,
+    rgba(181, 223, 212, 1) 0%,
+    rgba(39, 196, 55, 1) 100%
+  );
+}
+
+@media (min-width: 426px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/media-background-image.jpg");
+    margin: 0;
+  }
+  .container div h1 {
+    background-color: black;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .container {
+    background-image: url(../images/form-background.png);
+    background-size: cover;
+    width: max-content;
+    border-radius: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+  .input {
+    text-align: left;
+    color: black;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+  }
+  input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0;
+    border-bottom: 1px solid limegreen;
+    outline: 0;
+  }
+  .form {
+    width: 140%;
+  }
+
+  #login-button,
+  #register-button {
+    border: none;
+    background: rgb(181, 223, 212);
+    background: linear-gradient(
+      270deg,
+      rgba(181, 223, 212, 1) 0%,
+      rgba(39, 196, 55, 1) 100%
+    );
+    color: black;
+    cursor: pointer;
+  }
+}

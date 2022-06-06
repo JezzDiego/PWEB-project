@@ -14,6 +14,9 @@ app.set("view engine", "handlebars");
 //css
 app.use(express.static("public"));
 
+//images
+app.use(express.static("images"));
+
 //mongoDB
 const mongoose = require("mongoose");
 mongoose
@@ -32,8 +35,20 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => console.log("Connected to MongoDB"));
 //
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/cadastro", (req, res) => {
+  res.render("register");
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.get("/home", (req, res) => {
+  res.render("home");
+});
+
+app.get("/carrinho", (req, res) => {
+  res.render("cart");
 });
 
 const PORT = 2022 || process.env.PORT;
