@@ -94,6 +94,7 @@ body {
   margin-top: 1rem;
 }
 .planta {
+  padding: 1rem;
   text-align: center;
   min-width: 230px;
   height: 16rem;
@@ -105,7 +106,11 @@ body {
   cursor: pointer;
 }
 .planta-img img {
-  width: 6rem;
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 15px;
 }
 b {
   color: lightgreen;

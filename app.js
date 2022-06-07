@@ -6,6 +6,8 @@ const express = require("express");
 const { engine } = require("express-handlebars");
 const app = express();
 
+const plantas = require("./builds/buildPlantas");
+
 //config
 //handlebars
 app.engine("handlebars", engine({ defaultLayout: "main" })); //
@@ -17,10 +19,7 @@ app.use(express.static("public"));
 //images
 app.use(express.static("images"));
 
-//documents
-app.use(express.static("documents"));
-
-//mongoDB
+/*mongoDB
 const mongoose = require("mongoose");
 mongoose
   .connect(process.env.DATABASE_URL, {
@@ -37,7 +36,12 @@ mongoose
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => console.log("Connected to MongoDB"));
-//
+*/
+
+app.get("/", (req, res) => {
+  res.redirect("/home");
+});
+
 app.get("/cadastro", (req, res) => {
   res.render("register");
 });
@@ -47,11 +51,15 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.render("home");
+  res.render("home", { plantas: plantas });
 });
 
 app.get("/carrinho", (req, res) => {
   res.render("cart");
+});
+
+app.get("/meusPedidos", (req, res) => {
+  res.render("myDemands");
 });
 
 const PORT = 2022 || process.env.PORT;
