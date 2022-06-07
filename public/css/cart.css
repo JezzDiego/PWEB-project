@@ -181,6 +181,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: sticky;
   margin-top: 1rem;
   background: gray;
   width: 100%;
@@ -232,9 +233,6 @@ footer {
   #search img,
   #search input {
     margin-bottom: 7rem;
-  }
-  footer {
-    visibility: hidden;
   }
 }
 

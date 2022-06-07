@@ -46,12 +46,16 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("home");
 });
 
 app.get("/carrinho", (req, res) => {
   res.render("cart");
+});
+
+app.get("/perfil", (req, res) => {
+  res.render("info");
 });
 
 const PORT = 2022 || process.env.PORT;
