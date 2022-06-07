@@ -117,6 +117,9 @@ body {
 b {
   color: lightgreen;
 }
+a {
+  text-decoration: none;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -188,9 +191,6 @@ footer {
   #search img,
   #search input {
     margin-bottom: 2rem;
-  }
-  footer {
-    visibility: hidden;
   }
 }
 
