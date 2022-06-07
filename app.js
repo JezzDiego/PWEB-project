@@ -65,7 +65,7 @@ app.get("/minhaConta", (req, res) => {
   res.render("myAccount");
 });
 
-app.get("/meusPedidos", (req, res) => {
+app.get("/minhaConta/meusPedidos", (req, res) => {
   res.render("myDemands");
 });
 
