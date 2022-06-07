@@ -110,6 +110,9 @@ body {
 b {
   color: lightgreen;
 }
+a {
+  text-decoration: none;
+}
 footer {
   display: flex;
   flex-direction: row;
