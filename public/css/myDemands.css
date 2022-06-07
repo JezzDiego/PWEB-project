@@ -7,11 +7,12 @@ body {
   margin: 0 auto 0 auto;
   background-color: white;
   width: 90%;
+  border-radius: 15px;
+  box-shadow: 4px black;
 }
 
 #container-p {
   padding: 1%;
-  border: solid rgb(255, 0, 0) 1px;
 }
 
 .text-center {
@@ -41,4 +42,8 @@ body {
   object-fit: cover;
   border-radius: 15px;
   margin-left: 1%;
+}
+
+.m-right {
+  margin-right: 0.3%;
 }
