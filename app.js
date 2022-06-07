@@ -61,7 +61,7 @@ app.get("/perfil", (req, res) => {
   res.render("info");
 });
 
-app.get("/minhaConta/meusPedidos", (req, res) => {
+app.get("/meusPedidos", (req, res) => {
   res.render("myDemands");
 });
 
