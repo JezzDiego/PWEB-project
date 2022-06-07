@@ -17,6 +17,9 @@ app.use(express.static("public"));
 //images
 app.use(express.static("images"));
 
+//documents
+app.use(express.static("documents"));
+
 //mongoDB
 const mongoose = require("mongoose");
 mongoose
