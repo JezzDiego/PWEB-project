@@ -57,11 +57,15 @@ app.get("/carrinho", (req, res) => {
   res.render("cart");
 });
 
-app.get("/perfil", (req, res) => {
+app.get("/minhaConta/perfil", (req, res) => {
   res.render("info");
 });
 
-app.get("/meusPedidos", (req, res) => {
+app.get("/minhaConta", (req, res) => {
+  res.render("myAccount");
+});
+
+app.get("/minhaConta/meusPedidos", (req, res) => {
   res.render("myDemands");
 });
 
