@@ -1,0 +1,44 @@
+body {
+  background-color: beige;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  background-color: white;
+  width: 90%;
+}
+
+#container-p {
+  padding: 1%;
+  border: solid rgb(255, 0, 0) 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-on {
+  display: flex;
+}
+
+.cross {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.imagens {
+  justify-content: left;
+}
+
+.imagens img {
+  height: 8rem;
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 1%;
+}
